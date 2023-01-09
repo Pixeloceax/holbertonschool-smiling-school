@@ -1,3 +1,7 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+  }
+
 header {
     background-image: url("images/pic_1.jpg");
     background-size: cover;
@@ -20,6 +24,13 @@ header {
     width: 168px;
     height: auto;
 }
+
+.btn {
+    background-color: #C271FF !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+}
+
+
 
 @media screen and (max-width: 576px) {
     .navbar {
