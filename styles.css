@@ -1,8 +1,4 @@
 :root {
-
-    /* fonts */
-    --font-family: 'Source sans pro', 'Spin Cycle', 'holberton_school-icon', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-
     /* max-width */
     --max-width: 1150px;
     
@@ -12,7 +8,7 @@
 }
 
 * {
-    font-family: var(--font-family);
+    font-family:'Source sans pro', 'Spin Cycle', 'holberton_school-icon', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;    ;
     color: white;
 }
 
@@ -82,6 +78,28 @@ html, body {
 .testimonials img {
     width: 150px;
     height: 150px;
+}
+
+/* carousel */
+
+.carousel-section {
+    background-color: var(--color-purple);
+    padding: 90px 0;
+}
+
+.carousel-section img {
+    width: 150px;
+    height: 150px;
+}
+
+.carousel-item-content {
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+.arrow-size {
+    height: 60px !important;
+    width: 40px !important;
 }
 
 @media screen and (max-width: 576px) {
