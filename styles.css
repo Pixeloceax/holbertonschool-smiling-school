@@ -1,74 +1,112 @@
-body {
-    font-family: "Source Sans Pro", sans-serif;
-  }
+:root {
 
-header {
-    background-image: url("images/pic_1.jpg");
-    background-size: cover;
+    /* fonts */
+    --font-family: 'Source sans pro', 'Spin Cycle', 'holberton_school-icon', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+
+    /* max-width */
+    --max-width: 1150px;
+    
+    /* colors */
+    --color-purple: #C271FF;
+    --color-dark: #071629;
+}
+
+* {
+    font-family: var(--font-family);
+    color: white;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+.hero-section {
+    background-image: url('./images/pic_1.jpg');
+    background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    background-size: cover;
 }
 
-.navbar {
-    margin-right: 10%;
-    margin-left: 10%;
+.header {
+    max-width: var(--max-width);
+    margin: auto;
 }
 
-.img-logo-smile {
-    width: 50px;
-    height: auto;
-    margin-right: 20px;
+/*  nav */
+.logo-container {
+    float: left;
 }
 
-.img-logo {
-    width: 168px;
-    height: auto;
+.logo-container img {
+    height: 2rem;
 }
+
+.logo-container img:first-child {
+    margin-right: 1rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url('./images/hamburger_white.png') !important;
+}
+
+/* home page title */
+
+ .home-page-title-margin {
+    margin: 5rem auto -1rem;
+} 
+
+/* button register */
 
 .btn {
-    background-color: #C271FF !important;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+    background-color: var(--color-purple) !important;
+    display: block;
 }
 
-.font-size-title-home-page {
-    padding-top: 9%;
-    font-size: 6rem !important;
+/* learn text */
+
+.purple-text {
+    color: var(--color-purple);
 }
 
-.font-size-elements-home-page  {
-    font-size: 1px !important;
+/* margin */
+
+.text-home-page-margin {
+    margin-top: 5rem;
+    margin-bottom: 3.75rem !important;
 }
 
-.container-elements-home-page {
-    margin: 0 10% 0 10%;
+/* testimonials */
+
+.testimonials img {
+    width: 150px;
+    height: 150px;
 }
 
 @media screen and (max-width: 576px) {
-    .navbar {
-        margin-right: 25%;
-        margin-left: 0px;
-        margin-right: 0px;
+    /* nav */
+    .logo-container {
+        float: none;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 180px;
     }
-    .container-logo-nav {
-        padding-top: 8%;
-        padding-right: 105px;
-      }
-      .img-logo {
-        display: block;
-     }
-     .img-logo-smile {
-        margin-left: 35%;
-        display: block;
+
+    .logo-container img:first-child {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        max-width: 42px;
     }
-    .font-size-title-home-page {
-        padding-top: 45%;
-        font-size: 3.5rem !important;
+
+    .nav-link p {
+        text-align: center; 
     }
-    .font-size-elements-home-page  {
-        padding-top: 11%;
-        font-size: 1rem !important;
-    }
-    .container-elements-home-page {
-        margin: 0 11% 0 11%;
+
+    /* home page title */
+    .display-1 {
+        font-size: 4rem !important;
     }
 }
