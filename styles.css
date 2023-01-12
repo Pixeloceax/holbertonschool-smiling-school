@@ -17,6 +17,7 @@ html, body {
   overflow-x: hidden;
 }
 
+
 /* colors */
 
 .purple-text {
@@ -124,6 +125,18 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* membership section */
+
+.membership-section {
+    background-color: var(--color-dark);
+}
+
+/* footer */
+
+footer {
+    background-color: var(--color-dark);
 }
 
 @media screen and (max-width: 576px) {
