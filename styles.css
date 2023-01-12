@@ -17,6 +17,17 @@ html, body {
   overflow-x: hidden;
 }
 
+/* colors */
+
+.purple-text {
+    color: var(--color-purple);
+}
+
+.black-text {
+    color: var(--color-dark);
+}
+
+/* hero section */
 
 .hero-section {
     background-image: url('./images/pic_1.jpg');
@@ -60,11 +71,6 @@ html, body {
     display: block;
 }
 
-/* learn text */
-
-.purple-text {
-    color: var(--color-purple);
-}
 
 /* margin */
 
@@ -100,6 +106,24 @@ html, body {
 .arrow-size {
     height: 60px !important;
     width: 40px !important;
+}
+
+/* carousel video */
+
+.card-img-top {
+    object-fit: cover;
+}
+
+.play-icon {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 576px) {
