@@ -37,6 +37,15 @@ html, body {
     background-size: cover;
 }
 
+.hero-section-pricing {
+    background-image: url('./images/pic_2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* header */
+
 .header {
     max-width: var(--max-width);
     margin: auto;
